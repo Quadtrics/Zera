@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".activitys.activity.WithdrawActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_blue"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/backWithdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/withdraw"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="40"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:text="$"
+                    android:textColor="@color/yellow"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_amountWithdraw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="60"
+                    android:background="@null"
+                    android:editable="false"
+                    android:gravity="center_horizontal"
+                    android:hint="$00.00"
+                    android:textColor="@color/yellow"
+                    android:textColorHint="@color/yellow"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/availableToWithDraw"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/intro_background"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/addFindAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:gravity="end"
+                            android:text="$"
+                            android:textColor="@color/yellow"
+                            android:textSize="35dp"
+                            android:textStyle="bold"
+                            android:layout_toLeftOf="@id/et_withDraw"/>
+
+                        <EditText
+                            android:id="@+id/et_withDraw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="60"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="start"
+                            android:hint="00"
+                            android:maxLength="8"
+                            android:textColor="@color/yellow"
+                            android:textColorHint="@color/yellow"
+                            android:textSize="35dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/chooseAmount"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.konaire.numerickeyboard.NumericKeyboard
+                    android:id="@+id/withdrawKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addFindAccount"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    app:field="@+id/withdrawET"
+                    android:visibility="gone"
+                    app:keyTextColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/numKeyboard"
+                    android:layout_below="@id/addFindAccount"
+                    android:padding="8dp">
+
+                    <TableLayout
+                        android:id="@+id/keyboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <TableRow style="@style/keyboard_row">
+
+                            <TextView
+                                android:id="@+id/t9_key_1"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_one"/>
+
+                            <TextView
+                                android:id="@+id/t9_key_2"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_two"/>
+
+                            <TextView
+                                android:id="@+id/t9_key_3"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_three"/>
+                        </TableRow>
+
+                        <TableRow style="@style/keyboard_row">
+
+                            <TextView
+                                android:id="@+id/t9_key_4"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_four"/>
+
+                            <TextView
+                                android:id="@+id/t9_key_5"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_five"/>
+
+                            <TextView
+                                android:id="@+id/t9_key_6"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_six"/>
+                        </TableRow>
+
+                        <TableRow style="@style/keyboard_row">
+
+                            <TextView
+                                android:id="@+id/t9_key_7"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_seven"/>
+
+                            <TextView
+                                android:id="@+id/t9_key_8"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_eight"/>
+
+                            <TextView
+                                android:id="@+id/t9_key_9"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_nine"/>
+                        </TableRow>
+
+                        <TableRow style="@style/keyboard_row">
+
+                            <TextView
+                                android:id="@+id/t9_key_00"
+                                style="@style/keyboard_number_button"
+                                android:text="00"/>
+
+                            <TextView
+                                android:id="@+id/t9_key_0"
+                                style="@style/keyboard_number_button"
+                                android:text="@string/number_zero"/>
+
+                            <ImageView
+                                android:id="@+id/t9_key_backspace"
+                                android:src="@drawable/crose_keybord"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="60dp"
+                                android:padding="15dp"
+                                app:tint="@color/dark_blue" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <com.ncorti.slidetoact.SlideToActView
+                    android:id="@+id/withdrawSwipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/numKeyboard"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:elevation="6dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    app:area_margin="4dp"
+                    app:border_radius="20dp"
+                    app:outer_color="@color/yellow"
+                    app:slider_height="70dp"
+                    app:text="@string/swipeToWithDraw"
+                    app:text_size="18sp"
+                    app:text_style="bold"
+                    app:rotate_icon="false"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/withdrawKey"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/signup_background"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_next_login"
+                            app:tint="@color/yellow" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="SWIPE TO WITHDRAW"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B2FFFFFF"
+        android:id="@+id/rlWith"
+        android:visibility="gone"
+        android:clickable="true">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/white">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/tq"
+                      android:scaleX="1.2"/>
+
+                  <androidx.cardview.widget.CardView
+                      android:layout_width="70dp"
+                      android:layout_height="70dp"
+                      app:cardCornerRadius="40dp"
+                      android:id="@+id/ingsend"
+                      android:layout_marginTop="70dp"
+                      android:layout_centerHorizontal="true"
+                      app:cardBackgroundColor="@color/white">
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/send"
+                          android:layout_gravity="center"
+                          android:padding="17dp"/>
+                  </androidx.cardview.widget.CardView>
+              </RelativeLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/dark_blue"
+                      android:text="Withdraw Successful!"
+                      android:gravity="center"
+                      android:textSize="22sp"
+                      android:fontFamily="@font/montserrat_bold"
+                      android:layout_marginTop="40dp"/>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Funds are on the way. It may \n take 2-3 business days to \n arrive."
+                      android:gravity="center"
+                      android:textSize="18sp"
+                      android:fontFamily="@font/montserrat_bold"
+                      android:layout_marginTop="20dp"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:background="@drawable/wallet_btn"
+                      android:layout_marginLeft="70dp"
+                      android:layout_marginRight="70dp"
+                      android:text="All Done"
+                      android:id="@+id/allDoneWithdraw"
+                      android:gravity="center"
+                      android:fontFamily="@font/montserrat_bold"
+                      android:textColor="@color/white"
+                      android:textSize="17sp"
+                      android:layout_marginBottom="20dp"
+                      android:layout_marginTop="40dp"/>
+
+              </LinearLayout>
+
+
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>

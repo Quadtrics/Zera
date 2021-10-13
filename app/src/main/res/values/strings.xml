@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">Zera</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="language">Language</string>
+
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_backspace">Back</string>
+
+    <string name="logout">Are you sure to logout from this app ?</string>
+    <string name="exit_screen">Sure if you wan\'t to exits this app</string>
+    <string name="no_internet">No internet connection \n Go to setting and connect to network.</string>
+    <string name="error_msg">Please try again something went to wrong</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+
+    <string name="language_english">en</string>
+    <string name="language_hindi">ar</string>
+
+
+
+
+    <string name="validation_name">Please enter name.</string>
+    <string name="validation_firstname">Please enter first name.</string>
+    <string name="validation_lastname">Please enter last name.</string>
+    <string name="validation_mobile_length">Please enter valid mobile number</string>
+    <string name="validation_email">Please enter valid email.</string>
+    <string name="validation_password">Please enter password.</string>
+    <string name="validation_valid_password">Password must be of minimum six character.</string>
+    <string name="validation_termsCondtions">Please agree to the terms and conditions</string>
+
+    <string name="validation_city">Please enter city.</string>
+    <string name="validation_dateOfBirth">Please select date of birth.</string>
+    <string name="validation_state">Please enter State.</string>
+    <string name="validation_oldpassword">Please enter old password.</string>
+    <string name="validation_newpassword">Please enter new password.</string>
+    <string name="validation_cpassword">Please enter confirm password.</string>
+
+    <string name="validation_valid_cpassword">New password and confirm password must be same.</string>
+    <string name="validation_mobile">Please enter mobile no.</string>
+
+    <string name="validation_money">Please enter valid amount</string>
+    <string name="validation_termPeriod">Please select term period</string>
+    <string name="validation_valid_mobile">Please enter valid mobile no.</string>
+    <string name="validation_comment">Please enter comment</string>
+    <string name="validation_address">Please enter address</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="validation_money_withdraw">Withdrawal amount exceeds the available amount</string>
+    <string name="validation_money_redeposit">Redeposit amount exceeds the available amount</string>
+    <string name="validation_zero_amount">Withdrawal amount cannot be zero</string>
+    <string name="minimumAmount500">Deposit amount cannot be less than 500</string>
+    <string name="validation_zeroDeposit_amount">Deposit amount cannot be zero</string>
+    <string name="changePassword">Change Password</string>
+    <string name="currentPassword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="save">Save</string>
+    <string name="passwordSuccess">Password changed successfully</string>
+    <string name="renewAccount">Renew Account</string>
+    <string name="deleteUser">Delete Confirmation</string>
+    <string name="confirmations">Confirmation</string>
+    <string name="userDeleteConfirmation">Do you really want to delete this user?</string>
+    <string name="addSignHeader">Please sign below</string>
+
+
+    <!--    pdfs-->
+    <string name="pdfTitle">ZERA</string>
+    <string name="companyRepresentative">Luis A. Romero, Representative, Zera Financial</string>
+    <string name="maturityDate">Maturity Date -</string>
+    <string name="termLength">Term Length -</string>
+    <string name="interestRate">Interest Rate -</string>
+    <string name="date">Date -</string>
+    <string name="minimumTerm">MINIMUM TERM</string>
+    <string name="sixmonth">6 Months</string>
+    <string name="oneYear">1 Year</string>
+    <string name="twoyear">2 Years</string>
+    <string name="depositAmount">DEPOSIT AMOUNTS</string>
+    <string name="amt500">$500-$15,000</string>
+    <string name="amt15000">$15,001-$100,000</string>
+    <string name="amount1L">$100,001+</string>
+    <string name="monthlyInterestRate">MONTHLY INTEREST RATE</string>
+    <string name="rate5">5%/Month</string>
+    <string name="currentInterest">Current Interest Rates For Any New Accounts</string>
+    <string name="renewalPolicy"><b>RENEWAL POLICY –</b> The account will automatically renew at maturity unless you notify us
+within the 3-day grace period after the maturity date that you do not want the account to
+automatically renew. If you choose to let the account automatically renew, the term will renew as
+the same term as before. If you do not notify us, the renewal term will be the same as the
+original term, beginning on the maturity date (unless we notify you, in writing, before a maturity
+date, of a different term for renewal).</string>
+    <string name="interest"><b>INTEREST –</b> The interest rate on your account is a fixed rate. The initial interest rate is stated in
+the welcome letter sent to you at the e-mail address you provided at the account opening. </string>
+    <string name="maturity_Date"><b>MATURITY DATE –</b>  Confirmation of your maturity date, based on the term you selected at
+account opening and the date we receive the deposit to fund the account, will be sent to you in
+a welcome letter at the e-mail address you provided us when you opened the account.</string>
+    <string name="rateInfo"><b>RATE INFORMATION – </b> We guarantee the disclosed interest rate for 3 days from the date of
+the account opening. You must fund the account within this time period. If you do not fund the
+account within 3 days of account opening, the interest rate will be the prevailing interest rate at
+the time we receive the deposit. In any case, the account must be funded within 3 days of
+opening or it will be closed. \n\nConfirmation of your interest rate will be sent to you in a welcome letter at the e-mail address
+you provided us when you opened the account. The interest rate will be paid out monthly and or
+reinvested in the account. Interest begins to accrue on the business day we receive your
+deposit of any non-cash item (for example, a check) to fund the account.
+\n\nInterest will be compounded and credited monthly/annually, unless you have selected otherwise
+in which case interest will be compounded and credited at maturity. If you choose, you may
+have interest paid to you each month or reinvested into account.
+\n\nThe interest rate stated in your welcome letter assumes that interest remains on deposit until
+maturity. A withdrawal of interest will reduce earnings.</string>
+    <string name="minimumBalance"><b>MINIMUM BALANCE REQUIREMENT –</b>  You must make a minimum deposit of $500 to open
+the account. You must maintain this minimum balance on a daily basis to earn the interest rate
+disclosed.</string>
+    <string name="noOfEndorsment"><b>NUMBER OF ENDORSEMENTS –</b>  Only one endorsement by any named owner is required to
+withdraw or renegotiate the terms of the account. </string>
+    <string name="withdrawPenality"><b>WITHDRAWALS OF INTEREST –</b> Withdrawals of accrued interest during a term are permitted
+without penalty.</string>
+    <string name="earlyWithdrawal"><b>EARLY WITHDRAWAL PENALTY- </b>If we consent to a request for a withdrawal that is
+otherwise not permitted, you may have to pay a penalty. The penalty amount will be determined
+as follows:
+\n\n15% penalty of total account funds </string>
+    <string name="transctionalLimit"><b>TRANSACTION LIMITATIONS</b> – You may make additional deposits to the accounts principal
+during a term (if deposit is after withdrawal date and or after 72 grace period, interest will not
+start occurring until next withdrawal date). You cannot withdraw principal from the account
+without our consent except on or after maturity. (For accounts that automatically renew, there is
+a grace period after each renewal date during which withdrawals are permitted without penalty.)
+In certain circumstances, such as the death or incompetence of an account owner, the law
+permits, and in some cases requires, the waiver of the early withdrawal penalty. Other
+exceptions may also apply, for example, if this is part of an IRA or other tax-deferred savings
+plan.
+\n\nInterest earned during one term that is not withdrawn during or immediately after the term is
+added to principal for the renewal term. The rate for each renewal term will be determined by us
+on or just before the renewal date. You may call us on or shortly before the maturity date and we
+can tell you what the interest rate will be for the next renewal term.</string>
+    <string name="balancecompution"><b>BALANCE COMPUTATION METHOD –</b> We use the daily balance method to calculate the
+interest on this account. This method applies a daily periodic rate to the principal in the account
+each day.</string>
+    <string name="setOff"><b>SETOFF –</b> You each agree that we may (when permitted by law) set off funds in this account
+against any due and payable debt owed to us now or in the future, by any of you having the
+right of withdrawal, to the extent of such person’s or legal entity’s right to withdraw. If the debt
+arises from a note, “any due and payable debt” includes the total amount of which we are
+entitled to demand payment under the terms of the note at the time we set off, including any
+balance for which we properly accelerate under the note. This right to set-off does not apply to
+the account if: (a) it is an Individual Retirement Account or other tax-deferred retirement
+account, or (b) the debt is created by a consumer credit transaction under a credit card</string>
+    <string name="withdrawTransfers"><b>WITHDRAWALS AND TRANSFERS –</b> Only those of you who sign the permanent signature
+card may withdraw funds from the account. (In appropriate cases, a court appointed
+representative, a beneficiary of a trust or pay-on-death account whose right of withdrawal has
+matured, or a newly appointed and authorized representative of a legal entity may also withdraw
+from this account.) The specific number of you who must agree to any withdrawal is noted in the
+section bearing the title Number of Endorsements. This means, for example, that if two of you
+sign the signature card but only one endorsement is necessary for withdrawal then either of you
+may request withdrawal of the entire account at any time. Unless otherwise specified in writing
+only one endorsement is required to withdraw funds from this account. When withdrawing allow
+5-7 business days for funds to be deposited.</string>
+    <string name="primaryAgreement"><b>PRIMARY AGREEMENT –</b> You agree to keep your funds with us in the account until the
+maturity date. (An automatically renewable account matures at regular intervals.) You may not
+transfer this account without first obtaining our written consent. You must present this certificate
+when you request a withdrawal or a transfer.
+\n\nThe account is void if the deposit is made by a method requiring collection (such as a check)
+and the deposit is not immediately collected in full. If the deposit is made or payable in a foreign
+currency, the amount of the deposit will be adjusted to reflect final exchange into U.S. dollars.
+\n\nRules governing changes in interest rates have been provided. For other changes, we will give
+you reasonable notice of changes in writing or by any other method permitted by law.
+\n\nIf any notice is necessary, you all agree that the notices will be sufficient if we mail it to the
+address you have provided us. You must notify us of any change.</string>
+    <string name="transfer"><b>TRANSFER –</b> “Transfer” means any change in ownership, withdrawal rights, or survivorship
+rights, including (but not limited to) any pledge or assignment of this account as collateral. You
+cannot transfer the account without our written consent.</string>
+    <string name="definition"><b>DEFINITIONS –</b>
+    “We,” “our,” and “us” mean the issuer of this account and “you” and “your”
+    mean the depositor(s). “Account” means the original loan to us as well as the deposit it
+    evidences.
+</string>
+    <string name="openingPolicy">This Agreement, along with any other documents we provide you pertaining to your loan to us
+account, is a contract that establishes rules which control your account with us. Please read this
+carefully. By agreeing with these terms and conditions and opening the account, you agree to
+be bound by these rules.̥</string>
+    <string name="styled_welcome_message">We are <b><i>so</i></b> glad to see you.</string>
+    <string name="StartingAmount">Starting Amount -</string>
+
+
+
+    <string name="addBankOrCard">Add Card or Bank</string>
+    <string name="accountNumber">Account Number</string>
+    <string name="routingNumber">Routing Number</string>
+    <string name="add">Add</string>
+    <string name="addCard">Add Card</string>
+    <string name="nameOnCard">Name on Card</string>
+    <string name="cardNumber">Card Number</string>
+    <string name="expirationDate">Expiration Date</string>
+    <string name="addFunds">ADD FUNDS</string>
+    <string name="chooseAmount">Choose Amount</string>
+    <string name="swipeToDeposit">SWIPE TO DEPOSIT</string>
+    <string name="addAuthUser">Add Authorize User</string>
+    <string name="email">Email</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="state">State</string>
+    <string name="city">city</string>
+    <string name="authUser">Authorized Users</string>
+    <string name="addUser">Add User</string>
+    <string name="oldpassword">Old password</string>
+    <string name="hello">Hello</string>
+    <string name="deposit_amount">Deposit Amount</string>
+    <string name="termPeriod">Term Period</string>
+    <string name="years">Year(s)</string>
+    <string name="months">Months(s)</string>
+    <string name="summary">Summary</string>
+    <string name="principalBalance">Principal Balance</string>
+    <string name="fixedInterestRate">Fixed Interest Rate</string>
+    <string name="next">Next</string>
+    <string name="howDoesitwork">How Does It Work?</string>
+    <string name="seeHowmuchIcanMake">See How Much I Can Make!</string>
+    <string name="earningWithZera">Earning With Zera</string>
+    <string name="principal">Principal</string>
+    <string name="interestRates">Interest Rate</string>
+    <string name="totalEarned">Total Earned</string>
+    <string name="payments">Payments</string>
+    <string name="totalWithdraw">Total Withdraw</string>
+    <string name="allDone">All Done</string>
+    <string name="fundAccount">Fund Account</string>
+    <string name="userAddBankingInfoHere">User Adds \n Banking \n Info Here</string>
+    <string name="generalInfo">General Info</string>
+    <string name="userName">User Name</string>
+    <string name="howmuchIcanMake">How Much Can I Make?</string>
+    <string name="enterAmount">Enter amount</string>
+    <string name="principalDepositAmount">Principal Deposit Amount</string>
+    <string name="FivepercentPerMonth">5% Every Month</string>
+    <string name="calculate">Calculate</string>
+    <string name="welcomeBack">Welcome Back!</string>
+    <string name="signInToyourAccount">Sign in to your account</string>
+    <string name="yourEmail">Your Email</string>
+    <string name="password">Password</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="login">LOGIN</string>
+    <string name="dontHaveAnAccount">Don\'t have an account?</string>
+    <string name="signUp">Sign Up.</string>
+    <string name="emailLinkMessage">You will receive an email with a link to update \n your password.</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="redeposit">REDEPOSIT</string>
+    <string name="availableToRedeposit">Available to Redeposit</string>
+    <string name="swipeToRedeposit">SWIPE TO REDEPOSIT</string>
+    <string name="letsStartWithBasics">Let\'s start with the basics</string>
+    <string name="firstName">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="haveAnAccount">Have an account already?</string>
+    <string name="edituser">Edit User</string>
+    <string name="delete_user">Delete User</string>
+    <string name="withdraw">WITHDRAW</string>
+    <string name="availableToWithDraw">Available to Withdraw</string>
+    <string name="swipeToWithDraw">SWIPE TO WITHDRAW</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="note">Note</string>
+    <string name="typeYourDescription">Type your description</string>
+    <string name="okay">Okay</string>
+    <string name="currentBalance">Current Balance</string>
+    <string name="incomingPayment">INCOMING PAYMENT</string>
+    <string name="transction">TRANSACTIONS</string>
+    <string name="noTransactions">No transaction Available</string>
+    <string name="profile">Profile</string>
+    <string name="bank">Bank</string>
+    <string name="signOut">Sign out</string>
+    <string name="searchFor">Search for</string>
+    <string name="overview">Overview</string>
+    <string name="maturity_date">Maturity Date</string>
+    <string name="app_nameComplete">Zera Financial</string>
+    <string name="slide1Message">Get paid a fixed 5% every month on \n your principal deposit!</string>
+    <string name="easyDepositWithdraw">Easy Deposit \n and Withdrawal</string>
+    <string name="slide2Message">You are in control. Withdraw and \n deposit all from a click of button \n receive funds same to next day!</string>
+    <string name="saveAndSecure"><![CDATA[Safe & Secure]]></string>
+    <string name="slide3Message">Secured with 256-bit encryption,\n bank level security, and insured \n with the FDIC.</string>
+    <string name="step1">Step 1</string>
+    <string name="depositfundinAccount">Deposit Funds In Your Account.</string>
+    <string name="step1Message">With a minimum of $500 and with \n no max limit, your deposit is \n secured with the FDIC.</string>
+    <string name="step2">Step 2</string>
+    <string name="chooseATimePeriod">Choose A Term Period.</string>
+    <string name="step2Message">The longer funds are deposited the \n more you can make. See calculator.</string>
+    <string name="step3">Step 3</string>
+    <string name="interestAddUp">Interest Adds Up.</string>
+    <string name="step3Message">Receive a fixed 5% interest every \nmonth on your principal deposit.</string>
+    <string name="step4">Step 4</string>
+    <string name="withdrawReinvestEveryMonth">Withdraw Or \n Reinvest Every Month.</string>
+
+    <string name="trans_interest">Interest</string>
+    <string name="trans_open_Account">Open Account</string>
+    <string name="trans_Referral">Referral</string>
+    <string name="trans_Withdraw">Withdraw</string>
+    <string name="dateofBirth">Date of Birth</string>
+    <string name="noUserAvailabile">No User Available</string>
+
+</resources>

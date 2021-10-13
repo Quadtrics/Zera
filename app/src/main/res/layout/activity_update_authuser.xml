@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".activitys.activity.UpdateAuthUser">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/backAuthorizeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/authUser"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_authUserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/info_edit_text"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center_vertical"
+                android:hint="userName"
+                android:maxLength="15"
+                android:paddingLeft="17dp"
+                android:singleLine="true"
+                android:textColor="@color/text_gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_authEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/info_edit_text"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="17dp"
+                android:singleLine="true"
+                android:textColor="@color/text_gray"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_authMobile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/info_edit_text"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/phoneNumber"
+                android:inputType="number"
+                android:maxLength="14"
+                android:paddingLeft="17dp"
+                android:singleLine="true"
+                android:textColor="@color/text_gray"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_authAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/info_edit_text"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/address"
+                android:paddingLeft="17dp"
+                android:singleLine="true"
+                android:textColor="@color/text_gray"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="50">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="17dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="10dp"
+                        android:drawableEnd="@drawable/ic_down_blue"
+                        android:drawableRight="@drawable/ic_down_blue"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold"
+                        android:id="@+id/et_userState"
+                        android:background="@drawable/info_edit_text_black"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="@string/state"
+                        android:importantForAutofill="no" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:drawableEnd="@drawable/ic_down_blue"
+                        android:drawableRight="@drawable/ic_down_blue"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center_vertical"
+                        android:hint="State"
+                        android:visibility="gone"
+                        android:paddingLeft="17dp"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="17dp"
+                        android:background="@drawable/info_edit_text_black"
+                        android:paddingRight="10dp"
+                        android:drawableEnd="@drawable/ic_down_blue"
+                        android:drawableRight="@drawable/ic_down_blue"
+                        android:id="@+id/et_userCity"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="@string/city"
+                        android:importantForAutofill="no" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/info_edit_text_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dateofBirth"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginLeft="15dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_dateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="150">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="50dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_centerInParent="true"
+                            android:drawableEnd="@drawable/ic_down_blue"
+                            android:textColor="@color/black"
+                            android:text="mm"
+                            android:id="@+id/tv_monthDob"
+                            android:textSize="25sp"
+                            android:drawableRight="@drawable/ic_down_blue" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_centerInParent="true"
+                            android:drawableEnd="@drawable/ic_down_blue"
+                            android:textColor="@color/black"
+                            android:text="dd"
+                            android:id="@+id/tv_dateDob"
+                            android:textSize="25sp"
+                            android:drawableRight="@drawable/ic_down_blue" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="50dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_centerInParent="true"
+                            android:drawableEnd="@drawable/ic_down_blue"
+                            android:textColor="@color/black"
+                            android:text="yyyy"
+                            android:id="@+id/tv_yearDob"
+                            android:textSize="25sp"
+                            android:drawableRight="@drawable/ic_down_blue" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_editUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/signup_background"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/edituser"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_deleteUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/delete_user"
+                android:textColor="@color/yellow"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

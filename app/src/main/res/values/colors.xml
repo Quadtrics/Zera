@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF8641</color>
+    <color name="purple_200">#203440</color>
+    <color name="purple_500">#203440</color>
+    <color name="purple_700">#203440</color>
+    <color name="teal_200">#EF8641</color>
+    <color name="teal_700">#EF8641</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#F40E0E</color>
+    <color name="light_red">#FF0000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#EF8641</color>
+    <color name="dark_blue">#203440</color>
+    <color name="text_gray">#888888</color>
+    <color name="light_text_gray">#BFBFBF</color>
+    <color name="green">#8BC34A</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#6C6C6B</color>
+    <color name="dot_dark_screen2">#6C6C6B</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#C07413</color>
+    <color name="dot_light_screen2">#C07413</color>
+    <color name="blue">#0E6AA3</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen2</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+</resources>

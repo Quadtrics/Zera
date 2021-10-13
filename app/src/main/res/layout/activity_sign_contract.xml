@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".activitys.activity.SignContractActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User &amp; Zera Agreement Here \n User Signs, Once User Signs \n Up They Can Fund Account"
+        android:gravity="center_horizontal"
+        android:textColor="@color/yellow"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/signup_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/next"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/signUpContract"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

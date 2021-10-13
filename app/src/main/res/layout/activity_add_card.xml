@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:focusableInTouchMode="true"
+    tools:context=".activitys.activity.AddCardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/backAddCard"
+            android:layout_centerVertical="true"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addCard"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/intro_background">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/info_edit_text_black"
+            android:gravity="center_vertical"
+            android:hint="@string/nameOnCard"
+            android:paddingLeft="17dp"
+            android:singleLine="true"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/text_gray"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/info_edit_text_black"
+            android:gravity="center_vertical"
+            android:hint="@string/cardNumber"
+            android:paddingLeft="17dp"
+            android:singleLine="true"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/text_gray"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/info_edit_text_black">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expirationDate"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="50dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17dp"
+                            android:drawableEnd="@drawable/ic_down_blue"
+                            android:textColor="@color/black"
+                            android:text="09"
+                            android:textSize="25sp"
+                            android:drawableRight="@drawable/ic_down_blue" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="50dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:drawableEnd="@drawable/ic_down_blue"
+                            android:textColor="@color/black"
+                            android:text="1986"
+                            android:textSize="25sp"
+                            android:drawableRight="@drawable/ic_down_blue" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:layout_height="50dp"
+                    android:background="@drawable/info_edit_text_black"
+                    android:gravity="center_vertical"
+                    android:hint="CVC"
+                    android:paddingLeft="17dp"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/text_gray"
+                    android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/add"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/addCardBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/signup_background"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>
