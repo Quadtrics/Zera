@@ -147,12 +147,12 @@ class DepositAmmountActivity : AppCompatActivity() {
     }
 
     private fun setData() {
-        tv_card1.text = "6 \n Months"
-        tv_card2.text = "12 \n Months"
-        tv_card3.text = "18 \n Months"
-        tv_card4.text = "24 \n Months"
-        tv_card5.text = "30 \n Months"
-        tv_nameHeader.text =
+        tv_card1.text = "6 \n "+resources.getString(R.string.months)
+        tv_card2.text = "12 \n "+resources.getString(R.string.months)
+        tv_card3.text = "18 \n "+resources.getString(R.string.months)
+        tv_card4.text = "24 \n "+resources.getString(R.string.months)
+        tv_card5.text = "30 \n "+resources.getString(R.string.months)
+         tv_nameHeader.text =
             resources.getString(R.string.hello)+", " + extractWord(
                 SharePreference.getStringPref(
                     this@DepositAmmountActivity,
@@ -289,7 +289,7 @@ class DepositAmmountActivity : AppCompatActivity() {
         cv_card5.setCardBackgroundColor(ContextCompat.getColor(this, R.color.white))
         if (cardPosition != 0) {
             termSelected = "month"
-            tv_spinVal.setText("Custom")
+            tv_spinVal.setText(resources.getString(R.string.custom))
 
         }
         if (cardPosition == 1) {
@@ -321,16 +321,16 @@ class DepositAmmountActivity : AppCompatActivity() {
             tv_maturityDate.text = "MM/dd/yyyy"
         } else if (type.equals("year")) {
             months = count * 12
-            timePeriodSelected = count.toString() + "-" + type
+            timePeriodSelected = count.toString() + "-" + resources.getString(R.string.years)
 
         } else {
             months = count
-            timePeriodSelected = months.toString() + "-" + type
+            timePeriodSelected = months.toString() + "-" + resources.getString(R.string.months)
 
         }
         dateOfMaturity = addMonths(months, "yyyy-MM-dd")
         tv_maturityDate.text = addMonths(months, "MM/dd/yyyy")
-        tv_timePeriod.text = timePeriodSelected
+        tv_timePeriod.text =  timePeriodSelected
     }
 
 

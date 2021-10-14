@@ -54,7 +54,7 @@
                 android:background="@drawable/info_edit_text"
                 android:fontFamily="@font/montserrat_regular"
                 android:gravity="center_vertical"
-                android:hint="userName"
+                android:hint="@string/userName"
                 android:maxLength="15"
                 android:paddingLeft="17dp"
                 android:singleLine="true"

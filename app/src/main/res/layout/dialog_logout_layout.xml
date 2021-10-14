@@ -56,8 +56,8 @@
                 style="@style/logout_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
                 android:layout_weight="50">
 
                 <TextView
@@ -74,7 +74,7 @@
                 style="@style/logout_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="50"
                 android:backgroundTint="@color/text_gray">

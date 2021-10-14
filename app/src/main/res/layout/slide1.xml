@@ -29,16 +29,16 @@
         android:id="@+id/intro1"/>
 
     <TextView
+        android:id="@+id/introName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_nameComplete"
-        android:textSize="20sp"
-        android:textColor="@color/dark_blue"
         android:layout_below="@id/intro1"
-        android:id="@+id/introName"
-        android:fontFamily="@font/montserrat_regular"
         android:layout_marginTop="-30dp"
-        android:gravity="center_horizontal"/>
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/app_nameComplete"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"

@@ -11,6 +11,7 @@ import com.example.zeraapp.R
 import com.example.zeraapp.adapter.EarningAdapter
 import com.example.zeraapp.models.EarningPojo
 import com.example.zeraapp.utlis.makeDollars
+import com.example.zeraapp.utlis.replaceWord
 
 class EarningWithActivity : AppCompatActivity() {
     lateinit var RvEarnings: RecyclerView
@@ -72,7 +73,9 @@ class EarningWithActivity : AppCompatActivity() {
         termCount = intent.getStringExtra("termCount").toString()
         termSelected = intent.getStringExtra("term").toString()
         tv_principalAmount.text = makeDollars(principalBalance)
-        tv_timePeriod.text = termCount + " " + termSelected
+        var displayTimePeriod= termCount + " " + termSelected
+        tv_timePeriod.text =  replaceWord(displayTimePeriod,"month",getString(R.string.months))
+        tv_timePeriod.text =  replaceWord(displayTimePeriod,"year",getString(R.string.years))
         if (termSelected.equals("year")) {
             time = Integer.parseInt(termCount) * 12
         } else {

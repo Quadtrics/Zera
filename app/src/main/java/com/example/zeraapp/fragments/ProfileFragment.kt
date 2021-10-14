@@ -124,9 +124,9 @@ ProfileFragment : Fragment() {
         setLog("UserCheck", " " + getStringPref(ctx, userFirstName).toString())
         var varName = getStringPref(ctx, userName).toString()
         if (varName.isEmpty() || varName.equals(""))
-            tv_userName.text = extractWord(getStringPref(ctx, userName).toString())
-        else
             tv_userName.text = extractWord(getStringPref(ctx, userFirstName).toString())
+        else
+            tv_userName.text = extractWord(getStringPref(ctx, userName).toString())
 
         val imagePath: String? = SharePreference.getStringPref(
             ctx,

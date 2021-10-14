@@ -354,8 +354,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:text="@string/maturityDate"
-                            android:textColor="@color/dark_blue"
+                            android:text="@string/maturity_date"                          android:textColor="@color/dark_blue"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -403,7 +402,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
-                            android:text="5% Every Month"
+                            android:text="@string/FivepercentPerMonth"
                             android:textColor="@color/dark_blue"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -542,7 +541,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerInParent="true"
-                                    android:text="Next"
+                                    android:text="@string/next"
                                     android:textColor="@color/yellow" />
                             </RelativeLayout>
                         </LinearLayout>

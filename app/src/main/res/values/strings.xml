@@ -295,10 +295,12 @@ be bound by these rules.̥</string>
 
     <string name="trans_interest">Interest</string>
     <string name="trans_open_Account">Open Account</string>
-    <string name="trans_open_Asccount">Open Account</string>
     <string name="trans_Referral">Referral</string>
     <string name="trans_Withdraw">Withdraw</string>
     <string name="dateofBirth">Date of Birth</string>
     <string name="noUserAvailabile">No User Available</string>
+    <string name="interestPaid">Interest Paid</string>
+    <string name="newBalance">New Balance</string>
+    <string name="custom">Custom</string>
 
 </resources>

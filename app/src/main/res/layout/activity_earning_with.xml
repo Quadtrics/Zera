@@ -119,9 +119,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/termPeriod"
+                android:textAlignment="center"
                 android:textColor="@color/dark_blue"
                 android:textSize="13sp"
                 android:textStyle="bold" />
@@ -163,7 +164,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Payments"
+                    android:text="@string/payments"
                     android:textColor="@color/dark_blue"
                     android:textSize="11sp"
                     android:textStyle="bold" />
@@ -180,7 +181,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Principal"
+                    android:text="@string/principal"
                     android:textColor="@color/dark_blue"
                     android:textSize="11sp"
                     android:textStyle="bold" />
@@ -197,7 +198,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Interest Paid"
+                    android:text="@string/interestPaid"
                     android:textColor="@color/dark_blue"
                     android:textSize="11sp"
                     android:textStyle="bold" />

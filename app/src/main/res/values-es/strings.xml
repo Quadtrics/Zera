@@ -73,7 +73,7 @@
     <string name="deleteUser">Eliminar confirmación</string>
     <string name="confirmations">Confirmación</string>
     <string name="userDeleteConfirmation">¿Realmente quieres eliminar a este usuario?</string>
-    <string name="addSignHeader">Please sign below</string>
+    <string name="addSignHeader">Por favor firme abajo</string>
 
 
     <!--    pdfs-->
@@ -89,6 +89,7 @@
     <string name="twoyear">2 Years</string>
     <string name="depositAmount">DEPOSIT AMOUNTS</string>
     <string name="amt500">$500-$15,000</string>
+    <string name="StartingAmount">Starting Amount -</string>
     <string name="amt15000">$15,001-$100,000</string>
     <string name="amount1L">$100,001+</string>
     <string name="monthlyInterestRate">MONTHLY INTEREST RATE</string>
@@ -189,7 +190,7 @@ be bound by these rules.̥</string>
 
 
     <string name="styled_welcome_message">We are <b><i>so</i></b> glad to see you.</string>
-    <string name="StartingAmount">Monto inicial -</string>
+
     <string name="addBankOrCard">Agregar tarjeta o banco</string>
     <string name="accountNumber">Número de cuenta</string>
     <string name="routingNumber">Número de ruta</string>
@@ -221,7 +222,7 @@ be bound by these rules.̥</string>
     <string name="next">Próximo</string>
     <string name="howDoesitwork">¿Como funciona?</string>
     <string name="seeHowmuchIcanMake">¡Vea cuánto puedo ganar!</string>
-    <string name="earningWithZera">Earning With Zera</string>
+    <string name="earningWithZera">Ganar con zera</string>
     <string name="principal">Principal</string>
     <string name="interestRates">Tasa de interés</string>
     <string name="totalEarned">Total ganado</string>
@@ -244,10 +245,10 @@ be bound by these rules.̥</string>
     <string name="forgotpassword">¿Has olvidado tu contraseña?</string>
     <string name="login">ACCESO</string>
     <string name="dontHaveAnAccount">¿No tienes una cuenta?</string>
-    <string name="signUp">Sign Up.</string>
+    <string name="signUp">Inscribirse</string>
     <string name="emailLinkMessage">Recibirá un correo electrónico con un enlace para actualizar \n su contraseña.</string>
     <string name="resetpassword">Restablecer la contraseña</string>
-    <string name="redeposit">REDEPOSIT</string>
+    <string name="redeposit">REDEPOSITAR</string>
     <string name="availableToRedeposit">Disponible para volver a depositar</string>
     <string name="swipeToRedeposit">DESLIZA PARA REDEPOSITAR</string>
     <string name="letsStartWithBasics">Empecemos con lo básico</string>
@@ -276,22 +277,22 @@ be bound by these rules.̥</string>
     <string name="searchFor">Buscar</string>
     <string name="overview">Visión general</string>
     <string name="maturity_date">Fecha de vencimiento</string>
-    <string name="app_nameComplete">Zera Financial</string>
+    <string name="app_nameComplete">Zera Financiero</string>
     <string name="slide1Message">¡Reciba un pago fijo del 5% cada mes sobre \n su depósito de capital!</string>
     <string name="easyDepositWithdraw">Depósito \ny retiro fácil</string>
     <string name="slide2Message">Tú tienes el control. ¡Retirar y \n depositar todo con un clic de botón \n recibir fondos del mismo modo para el día siguiente!</string>
     <string name="saveAndSecure">Seguro y protegido</string>
     <string name="slide3Message">Asegurado con cifrado de 256 bits, \n nivel de seguridad bancario y asegurado \n con la FDIC.</string>
-    <string name="step1">Step 1</string>
+    <string name="step1">Paso 1</string>
     <string name="depositfundinAccount">Depositar fondos en su cuenta.</string>
     <string name="step1Message">Con un mínimo de $ 500 y \n sin límite máximo, su depósito está \n asegurado con la FDIC.</string>
-    <string name="step2">Step 2</string>
+    <string name="step2">Paso 2</string>
     <string name="chooseATimePeriod">Elija un período de término.</string>
     <string name="step2Message">Cuanto más tiempo se depositen los fondos \n más podrás ganar. Ver calculadora.</string>
-    <string name="step3">Step 3</string>
+    <string name="step3">Paso 3</string>
     <string name="interestAddUp">El interés se suma.</string>
     <string name="step3Message">Reciba un interés fijo del 5% cada \nmes sobre su depósito de capital.</string>
-    <string name="step4">Step 4</string>
+    <string name="step4">Paso 4</string>
     <string name="withdrawReinvestEveryMonth">Retirar o \n reinvertir cada mes.</string>
 
     <string name="trans_interest">Interesar</string>
@@ -300,5 +301,11 @@ be bound by these rules.̥</string>
     <string name="trans_Withdraw">Retirar</string>
     <string name="dateofBirth">Fecha de cumpleaños</string>
     <string name="noUserAvailabile">Ningún usuario disponible</string>
+
+    <string name="interestPaid">Pago interesado</string>
+    <string name="newBalance">Nuevo equilibrio</string>
+    <string name="custom">Personalizado</string>
+
+
 
 </resources>
