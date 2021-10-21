@@ -20,10 +20,12 @@ import android.view.ViewGroup
 import android.view.Window
 import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.app.ActivityCompat.recreate
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.example.zeraapp.R
 import com.example.zeraapp.activitys.activity.AuthorizedUserActivity
+import com.example.zeraapp.activitys.activity.DashBoardActivity
 import com.example.zeraapp.activitys.activity.GeneralInfoActivity
 import com.example.zeraapp.activitys.activity.MainActivity
 import com.example.zeraapp.apis.ApiClient
@@ -169,7 +171,10 @@ ProfileFragment : Fragment() {
                 SharePreference.setStringPref(ctx as Activity, SharePreference.appLanguage, "en")
                 lastLang = "en"
             }
-            setLocale(ctx as Activity, lastLang,true)
+            setLocale(ctx as Activity, lastLang,false)
+            var intent = Intent(activity, DashBoardActivity::class.java)
+            intent.putExtra("profile", "1")
+            startActivity(intent)
         }
         llChangePass.setOnClickListener {
             /*    val intent = Intent(context, ChangePasswordActivity::class.java)

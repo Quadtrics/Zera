@@ -425,7 +425,7 @@
                         android:background="@drawable/wallet_btn"
                         android:fontFamily="@font/montserrat_bold"
                         android:gravity="center"
-                        android:text="All Done"
+                        android:text="@string/allDone"
                         android:textColor="@color/white"
                         android:textSize="17sp" />
 

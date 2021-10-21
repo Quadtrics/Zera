@@ -2,8 +2,11 @@ package com.example.zeraapp.activitys.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.view.View
 import android.view.View.INVISIBLE
@@ -36,6 +39,7 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var et_password: EditText
     lateinit var rl_termsCheckBox: RelativeLayout
     lateinit var tv_signUp: TextView
+    lateinit var tv_termsConditions: TextView
     lateinit var iv_check: ImageView
     var termsApproved = false
 
@@ -56,6 +60,7 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun findID() {
         tv_signUp = findViewById(R.id.tv_signUp)
+        tv_termsConditions = findViewById(R.id.tv_termsConditions)
         tv_loginSign = findViewById(R.id.tv_loginSign)
         terms = findViewById(R.id.terms)
         policy = findViewById(R.id.policy)
@@ -73,6 +78,29 @@ class SignUpActivity : AppCompatActivity() {
         et_email = findViewById(R.id.et_email)
 
         click()
+        setData()
+    }
+
+
+
+
+    private fun setData() {
+        val ihaveread= resources.getString(R.string.ihaveread)
+        val andS= resources.getString(R.string.and)
+        val aswellasacknowledge= resources.getString(R.string.aswellasacknowledge)
+        val termsOfuse= resources.getString(R.string.termsOfuse)
+        val policy= resources.getString(R.string.policy)
+        val privacyNotice= resources.getString(R.string.privacyNotice)
+        val completeText= ihaveread+termsOfuse+andS+policy+aswellasacknowledge+privacyNotice
+        val spannable = SpannableString(completeText)
+        spannable.setSpan(
+            ForegroundColorSpan(resources.getColor(R.color.colorPrimary)),
+            completeText.indexOf(termsOfuse), // start
+            completeText.indexOf(andS), // end
+            Spannable.SPAN_EXCLUSIVE_INCLUSIVE
+        )
+        tv_termsConditions.setText(spannable)
+
     }
 
     private fun click() {
@@ -174,6 +202,8 @@ class SignUpActivity : AppCompatActivity() {
         }
 
     }
+
+
 
 
     private fun callSignUp() {

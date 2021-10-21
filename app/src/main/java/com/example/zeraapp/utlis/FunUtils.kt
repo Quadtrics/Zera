@@ -4,8 +4,11 @@ import android.app.Activity
 import android.content.Context
 import android.content.res.Configuration
 import android.content.res.Resources
+import android.text.Spannable
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import java.text.DateFormat
 import java.text.DecimalFormat
@@ -13,6 +16,16 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 
+
+fun setSpannableColor(view: TextView, fulltext: String, subtext: String, color: Int) {
+    view.setText(fulltext, TextView.BufferType.SPANNABLE)
+    val str = view.text as Spannable
+    val i = fulltext.indexOf(subtext)
+    str.setSpan(
+        ForegroundColorSpan(color), i,
+        i + subtext.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+    )
+}
 fun setLocale(activity: Activity, languageCode: String?, update: Boolean) {
     val locale = Locale(languageCode)
     Locale.setDefault(locale)

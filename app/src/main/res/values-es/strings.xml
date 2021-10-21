@@ -216,6 +216,7 @@ be bound by these rules.̥</string>
     <string name="termPeriod">Período de vigencia</string>
     <string name="years">Años</string>
     <string name="months">Meses</string>
+    <string name="month">mes</string>
     <string name="summary">Resumen</string>
     <string name="principalBalance">saldo principal</string>
     <string name="fixedInterestRate">Tasa de interés fija</string>
@@ -305,7 +306,15 @@ be bound by these rules.̥</string>
     <string name="interestPaid">Pago interesado</string>
     <string name="newBalance">Nuevo equilibrio</string>
     <string name="custom">Personalizado</string>
+    <string name="done">Hecho</string>
 
+
+    <string name="ihaveread">he leído </string>
+    <string name="and">y </string>
+    <string name="aswellasacknowledge">así como \n reconocer el recibo de </string>
+    <string name="termsOfuse"><u><b>Condiciones de uso</b></u> </string>
+    <string name="policy"><u><b>Política,</b></u> </string>
+    <string name="privacyNotice"><u><b>Aviso de Privacidad</b></u> </string>
 
 
 </resources>

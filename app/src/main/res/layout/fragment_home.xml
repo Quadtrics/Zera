@@ -67,15 +67,30 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_currentBalance"
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="$00"
-                    android:textColor="@color/white"
-                    android:textSize="30dp"
-                    android:textStyle="bold" />
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_currentBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="$00"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/lock"
+                        android:layout_toRightOf="@id/tv_currentBalance"
+                        android:layout_marginTop="25dp"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -98,11 +113,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="20dp"
                         android:text="@string/addFunds"
                         android:textColor="@color/white"
                         android:textSize="17sp"
-                        android:textStyle="bold"
-                        android:layout_marginHorizontal="20dp"/>
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
             </LinearLayout>
@@ -162,26 +177,44 @@
                                 android:textColor="@color/yellow"
                                 android:textSize="25sp" />
                         </RelativeLayout>
-
-                        <TextView
-                            android:id="@+id/tv_principalBalance"
-                            android:layout_width="match_parent"
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
                             android:layout_marginHorizontal="10dp"
-                            android:layout_marginTop="10dp"
-                            android:text="$00"
-                            android:textColor="@color/dark_blue"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            >
+
+
+                            <TextView
+                                android:id="@+id/tv_principalBalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="$00"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/lock"
+                                android:layout_toRightOf="@id/tv_principalBalance"
+                                android:layout_marginTop="25dp"
+                                app:tint="@color/dark_blue" />
+
+                        </RelativeLayout>
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:text="@string/principalBalance"
+                            android:textAllCaps="true"
                             android:textColor="@color/text_gray"
                             android:textSize="10sp"
-                            android:textAllCaps="true"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -217,7 +250,7 @@
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:progress="85"
-                                android:rotationY="180"/>
+                                android:rotationY="180" />
 
                             <TextView
                                 android:layout_width="wrap_content"

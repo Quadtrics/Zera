@@ -27,6 +27,7 @@ class DashBoardActivity : AppCompatActivity() {
     lateinit var next:String
     lateinit var next2:String
     lateinit var next3:String
+    lateinit var next4:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dash_board)
@@ -76,6 +77,15 @@ class DashBoardActivity : AppCompatActivity() {
             imgWallet.setImageResource(R.drawable.ic_footer_wallet_selected_svg)
             imgTrangaction.setImageResource(R.drawable.ic_footer_report_svg)
             imgProfile.setImageResource(R.drawable.ic_footer_combined_svg)
+        }
+       var intent4 = intent
+        next4 = intent4.getStringExtra("profile").toString()
+        if (next4.equals("1")){
+            replaceFragment(ProfileFragment())
+            imgHome.setImageResource(R.drawable.ic_footer_dahsboard_svg)
+            imgWallet.setImageResource(R.drawable.ic_footer_wallet_svg)
+            imgTrangaction.setImageResource(R.drawable.ic_footer_report_svg)
+            imgProfile.setImageResource(R.drawable.ic_footer_selected_svg)
         }
 
         clicks()

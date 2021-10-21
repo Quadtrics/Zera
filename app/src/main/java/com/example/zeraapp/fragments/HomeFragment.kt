@@ -95,7 +95,7 @@ class HomeFragment : Fragment() {
             SharePreference.isRenew,
             isRenew.toString()
         )
-        if (isRenew != 0) {
+        if (isRenew == 0) { // 0 = maturity_date is active
             iv_moreMenu.visibility = INVISIBLE
         }
         SharePreference.setStringPref(
@@ -175,14 +175,20 @@ class HomeFragment : Fragment() {
             SharePreference.userProfileImage,
             Common.BaseImageUrl + loginList.data!!.image.toString()
         )
-
-        tv_userNameHeader.text =
-            resources.getString(R.string.hello)+", " + extractWord(
+        var varName = SharePreference.getStringPref(ctx, SharePreference.userName).toString()
+        if (varName.isEmpty() || varName.equals(""))
+            tv_userNameHeader.text =resources.getString(R.string.hello)+", " + extractWord(
                 SharePreference.getStringPref(
                     ctx,
                     SharePreference.userFirstName
-                ).toString()
-            )
+                ).toString())
+        else
+            tv_userNameHeader.text =resources.getString(R.string.hello)+", " + extractWord(
+                SharePreference.getStringPref(
+                    ctx,
+                    SharePreference.userName
+                ).toString())
+
         tv_currentBalance.text = makeDollars(
             SharePreference.getStringPref(ctx, SharePreference.userNetBalance).toString()
         )
@@ -419,13 +425,13 @@ class HomeFragment : Fragment() {
     private fun callTransactionAdapter(transactionList: List<TransactionPojo>?) {
         for(transaction in transactionList!!){
             transaction.description = replaceWord("Interest",
-                transaction.description.toString(), resources.getString(R.string.trans_interest))
+                transaction.description.toString(), requireContext().resources.getString(R.string.trans_interest))
             transaction.description = replaceWord("Open Account",
-                transaction.description.toString(), resources.getString(R.string.trans_open_Account))
+                transaction.description.toString(), requireContext().resources.getString(R.string.trans_open_Account))
             transaction.description = replaceWord("Referral",
-                transaction.description.toString(), resources.getString(R.string.trans_Referral))
+                transaction.description.toString(), requireContext().resources.getString(R.string.trans_Referral))
             transaction.description = replaceWord("withDraw",
-                transaction.description.toString(), resources.getString(R.string.trans_Withdraw))
+                transaction.description.toString(), requireContext().resources.getString(R.string.trans_Withdraw))
         }
 
         transactionAdapter = HomeTransactionAdapter(ctx, transactionList)

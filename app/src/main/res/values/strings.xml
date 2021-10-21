@@ -214,6 +214,7 @@ be bound by these rules.̥</string>
     <string name="termPeriod">Term Period</string>
     <string name="years">Year(s)</string>
     <string name="months">Months(s)</string>
+    <string name="month">Months</string>
     <string name="summary">Summary</string>
     <string name="principalBalance">Principal Balance</string>
     <string name="fixedInterestRate">Fixed Interest Rate</string>
@@ -302,5 +303,16 @@ be bound by these rules.̥</string>
     <string name="interestPaid">Interest Paid</string>
     <string name="newBalance">New Balance</string>
     <string name="custom">Custom</string>
+    <string name="done">Done</string>
+
+    <string name="ihaveread">I have read </string>
+    <string name="and"> and </string>
+    <string name="aswellasacknowledge"> as well \n as acknowledge reciept of </string>
+    <string name="termsOfuse"><u><b> Terms of Use </b></u> </string>
+    <string name="policy"><u><b> Policy, </b></u> </string>
+    <string name="privacyNotice"><u><b> Privacy Notice</b></u> </string>
+
+
+
 
 </resources>

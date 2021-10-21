@@ -3,15 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_add_user.xml" value="0.26871794871794874" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_deposit_ammount.xml" value="0.27291666666666664" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_earning_with.xml" value="0.26871794871794874" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_how_much.xml" value="0.27291666666666664" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_login.xml" value="0.26871794871794874" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_sign_contract.xml" value="0.26871794871794874" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_sign_up.xml" value="0.27291666666666664" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_splash.xml" value="0.14270833333333333" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_update_authuser.xml" value="0.26871794871794874" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/activity_withdraw.xml" value="0.27291666666666664" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/change_password_dialog.xml" value="0.27291666666666664" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/dialog_logout_layout.xml" value="0.26871794871794874" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/fragment_home.xml" value="0.584672435105068" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/slide1.xml" value="0.27291666666666664" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/slide2.xml" value="0.26871794871794874" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/slide3.xml" value="0.27291666666666664" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/step1.xml" value="0.26871794871794874" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/step2.xml" value="0.26871794871794874" />
+        <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/step3.xml" value="0.26871794871794874" />
         <entry key="..\:/Rajat/Projects/Zera/Project/Zera/Zera__App-master/app/src/main/res/layout/step4.xml" value="0.27291666666666664" />
       </map>
     </option>

@@ -147,11 +147,11 @@ class DepositAmmountActivity : AppCompatActivity() {
     }
 
     private fun setData() {
-        tv_card1.text = "6 \n "+resources.getString(R.string.months)
-        tv_card2.text = "12 \n "+resources.getString(R.string.months)
-        tv_card3.text = "18 \n "+resources.getString(R.string.months)
-        tv_card4.text = "24 \n "+resources.getString(R.string.months)
-        tv_card5.text = "30 \n "+resources.getString(R.string.months)
+        tv_card1.text = "6 \n "+resources.getString(R.string.month)
+        tv_card2.text = "12 \n "+resources.getString(R.string.month)
+        tv_card3.text = "18 \n "+resources.getString(R.string.month)
+        tv_card4.text = "24 \n "+resources.getString(R.string.month)
+        tv_card5.text = "30 \n "+resources.getString(R.string.month)
          tv_nameHeader.text =
             resources.getString(R.string.hello)+", " + extractWord(
                 SharePreference.getStringPref(

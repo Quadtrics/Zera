@@ -116,7 +116,7 @@
                             android:layout_marginLeft="10dp"
                             android:drawableEnd="@drawable/ic_down_icn"
                             android:drawableRight="@drawable/ic_down_icn"
-                            android:text="Custom"
+                            android:text="@string/custom"
                             android:textColor="@color/white"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -520,7 +520,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerInParent="true"
-                                    android:text="Done"
+                                    android:text="@string/done"
                                     android:textColor="@color/text_gray" />
                             </RelativeLayout>
 
@@ -558,7 +558,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:text="All Done"
+                                android:text="@string/allDone"
                                 android:textColor="@color/yellow" />
                         </RelativeLayout>
                     </RelativeLayout>
